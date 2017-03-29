@@ -1,0 +1,51 @@
+flex 속성은 부모속성과 자식속성이 각각 존재한다.
+
+flex container, flex items
+
+그릇에 해당하는 부모 요소에 display:flex 혹은
+inline-flex로 flexbox임을 선언한다.
+
+flex-direction
+ 컨테이너 안에 위치하는 자식요소에 어떤 방향성을 줄 것인지 결정합니다. flexbox 는 내용물을 상하좌우 여러 방향에 걸쳐 정렬할수 있기에 각광받고 있습니다.
+ main axis 가로축 / cross axis 세로축
+ 기본적으로 아잍메은 수평방향으로 흐르며 좌에서 우입니다.
+ row-reverse 는 수평방향으로 흐르며 우에서 좌입니다
+ column은 수직방향으로 흐르모 방향은 상에서 하입니다.
+ column-reverse 는 하에서 상입니다.
+ 
+
+flex-wrap (아이템의 줄넘김을 처리한다)
+ default value: nowrap
+ wrap 아이템이 적정 길이 이상으로 길다면 복수줄에 걸쳐표현한다.
+ wrap-reverse wrap와 같지만 방향이 반전되어있습니다.
+ 
+flex-direction과 flex-wrap 속성을 단축하여 사용할수 있는 flex-flow 속성이 존재한다.
+
+flex-wrap: row wrap;
+
+justify-content
+ 빈 공간이 있는 경우에 시작 지점을 정한다.
+ 
+align-items: 
+ 빈 공간이 있는 경우에 수직 시작 지점
+ justify-content의 수직버전이라고 생각해도 무방하다.
+
+align-content 이건 먼지 몰겟네;
+
+flex item-children
+반드시 부모 요소 컨테이너에 display: flex가 선언되어 있어야 한다.
+
+order
+ 요소 순서를 지정(정수로)
+ 
+flex-grow
+ 아이템이 컨테이너에서 차지할 부피를 확장한다. default value는 0이며 숫자가 높을수록 다른 아이템의 곱절단위로 부피가 늘어난다.
+ 부피를 지정
+
+flex-shrink
+ flex-grow 의 반대의 속성처럼 보이지만, 계산 방식이 다르다. 이 프로퍼티의 계산방법에 대한 다양한 예제가 있지만 이해가 쉽지 않다.
+ 
+flex-basis
+ 아이템의 기본 크기 값을 선언한다.
+ 
+align-self 
